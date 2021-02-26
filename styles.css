@@ -1,0 +1,204 @@
+/* header css */
+.header{
+    text-align: center;
+    font-size: 32px;
+    font-family: Helvetica;
+}
+/* body css */
+body{
+    
+    background-color: #f3f2ef;
+}
+
+/*container css */
+
+.wrapperContainer{
+    display: grid;  
+    grid-row-gap: 35px;
+    grid-column-gap: 35px;  
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: center;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.container:hover {
+    box-shadow: 0 0 5px rgba(33,33,33,.2); 
+    margin-top: -10px;
+}
+
+/* image css */
+img {
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* description css */
+.companyName{
+    font-family: Helvetica;
+    margin: 0px;
+}
+
+.roleName{
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0px 0px 0px;
+}
+
+.postingDate{
+    font-family: Helvetica;
+    font-style: italic;
+    color: grey;
+    padding-top: 10px;
+}
+
+.category{
+    background-color: #ddf7e9;
+    padding: 10px;
+    border-radius: 10px;
+    color: #6bd189;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.spaceBetweenWrapper{
+    display: flex;
+    flex-direction: row ;
+    padding-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.startLeftWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skill{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #8a8a8a;
+    margin: 3px;      
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.skillHacked{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #8a8a8a;
+    margin: 3px;      
+    font-family: Arial;
+    font-weight: bold;
+    display: none;
+}
+
+
+.dots{
+    margin-top: 10px;
+}
+
+.d{
+    color: green;
+}
+
+/* footer css  */
+
+.footerContainer {
+    text-align: center;
+    width:100%;
+    position: static;
+    bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footerText {
+    font-family: Helvetica;
+    font-size: 10px;
+    color: black;
+}
+
+/* phone mode */
+@media (max-width: 850px) {
+    .wrapperContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        width: 95%;
+        height: auto;
+    }
+
+    .phoneWrapper{
+        display: block;
+    }
+
+
+    .spaceBetweenWrapper{
+        padding-top: 0px;
+        clear: both;
+        
+    }
+    img{
+        float: left;
+        margin-bottom: 0px;
+        width: 20%;
+    }
+    .companyName{
+        margin-top: 20px;
+    }
+    .roleName{
+        font-size: 18px;
+    }
+    .skillHacked{
+        display: block;
+    }
+
+}
+
+@media(max-width: 750px){
+    #d{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+    #c{
+        display: none;
+    }
+}
+
+@media(max-width: 650px){
+    #b{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    #a{
+        display: none;
+    }
+}
